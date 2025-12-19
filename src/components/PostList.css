@@ -1,0 +1,99 @@
+.post-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-list-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.post-count {
+  text-align: right;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-table thead {
+  background-color: #f8f9fa;
+}
+
+.post-table th,
+.post-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.post-table th {
+  font-weight: 600;
+  color: #495057;
+}
+
+.col-id {
+  width: 80px;
+  text-align: center;
+}
+
+.col-title {
+  width: auto;
+}
+
+.col-author {
+  width: 150px;
+}
+
+.col-date {
+  width: 180px;
+}
+
+.post-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.post-row:hover {
+  background-color: #f8f9fa;
+}
+
+.no-posts {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
