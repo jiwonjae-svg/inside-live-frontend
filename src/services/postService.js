@@ -16,8 +16,10 @@ export const getPostById = (id) => {
 // Create a new post
 export const createPost = (post) => {
   const posts = getAllPosts();
+  // Generate ID based on timestamp and random number to avoid collisions
+  const id = Date.now() + Math.floor(Math.random() * 1000);
   const newPost = {
-    id: Date.now(),
+    id,
     ...post,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),

@@ -93,7 +93,7 @@ const PostForm = ({ post, onSave, onCancel }) => {
             onChange={handleChange}
             className={errors.author ? 'error' : ''}
             placeholder="작성자를 입력하세요"
-            disabled={post ? true : false}
+            disabled={!!post}
           />
           {errors.author && <span className="error-message">{errors.author}</span>}
         </div>
