@@ -1,0 +1,22 @@
+{
+  "name": "react-crud-board",
+  "version": "1.0.0",
+  "description": "React CRUD Board Application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:backend": "cd server && npm run dev",
+    "dev:all": "start powershell -NoExit -Command \"cd server; Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; npm run dev\" && npm run dev"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.0"
+  }
+}

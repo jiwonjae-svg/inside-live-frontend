@@ -1,0 +1,59 @@
+{
+  "name": "Inside Live - 커뮤니티 게시판",
+  "short_name": "IL",
+  "description": "다양한 주제의 커뮤니티 게시판 - 만화, 게임, 영화, 책, 음악, 스포츠",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["social", "community", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "만화 게시판",
+      "short_name": "만화",
+      "url": "/#board/comic",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "게임 게시판",
+      "short_name": "게임",
+      "url": "/#board/game",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "내 활동",
+      "short_name": "활동",
+      "url": "/#myactivity",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

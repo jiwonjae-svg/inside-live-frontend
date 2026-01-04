@@ -1,0 +1,201 @@
+.app {
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 다크 모드 전역 스타일 */
+[data-theme="dark"] .app {
+  background: transparent;
+}
+
+[data-theme="dark"] .guest-banner {
+  background: rgba(15, 52, 96, 0.95);
+  color: #e4e4e4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .container {
+  background: #0f3460;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .container h1,
+[data-theme="dark"] .container h2,
+[data-theme="dark"] .container h3,
+[data-theme="dark"] .container h4,
+[data-theme="dark"] .container h5,
+[data-theme="dark"] .container h6 {
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .container p,
+[data-theme="dark"] .container span,
+[data-theme="dark"] .container div {
+  color: #b8b8b8;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background: #1a1a2e;
+  border-color: #2a2a3e;
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #666;
+}
+
+[data-theme="dark"] button:not(.btn-submit):not(.btn-oauth):not(.btn-check) {
+  background: #1a1a2e;
+  border-color: #2a2a3e;
+  color: #e4e4e4;
+}
+
+.guest-banner {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 20px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login-banner {
+  background: #0B1751;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.btn-login-banner:hover {
+  transform: translateY(-2px);
+}
+
+.main-layout {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.content-area {
+  flex: 1;
+  min-width: 0;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  min-height: 600px;
+}
+
+@media (max-width: 1024px) {
+  .main-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 0;
+  }
+
+  .main-layout {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* 차단 모달 */
+.banned-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.banned-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.banned-modal h3 {
+  margin: 0 0 16px 0;
+  color: #dc3545;
+  font-size: 24px;
+}
+
+.banned-message {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.banned-reason {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.banned-reason strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.banned-reason p {
+  margin: 0;
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.banned-modal .btn-confirm {
+  background: #0B1751;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.banned-modal .btn-confirm:hover {
+  background: #091234;
+}
+

@@ -1,0 +1,169 @@
+.app-header {
+  background: #0B1751;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome {
+  font-size: 14px;
+  position: relative;
+}
+
+.welcome strong {
+  font-weight: 700;
+}
+
+.notification-badge {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  min-width: 18px;
+  text-align: center;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.btn-logout {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-logout:hover {
+  background: white;
+  color: #667eea;
+}
+
+.btn-profile,
+.btn-myactivity,
+.btn-message,
+.btn-admin {
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-profile:hover,
+.btn-myactivity:hover,
+.btn-message:hover,
+.btn-admin:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .user-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-logout {
+    width: 100%;
+  }
+}
+
+/* 다크 모드 */
+[data-theme="dark"] .app-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .logo {
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .welcome {
+  color: #b8b8b8;
+}
+
+[data-theme="dark"] .welcome strong {
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .btn-logout {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e4e4e4;
+  border-color: #667eea;
+}
+
+[data-theme="dark"] .btn-logout:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+[data-theme="dark"] .btn-profile,
+[data-theme="dark"] .btn-myactivity,
+[data-theme="dark"] .btn-message {
+  background: rgba(102, 126, 234, 0.2);
+  color: #88a0ff;
+  border: 1px solid #667eea;
+}
+
+[data-theme="dark"] .btn-profile:hover,
+[data-theme="dark"] .btn-myactivity:hover,
+[data-theme="dark"] .btn-message:hover {
+  background: #667eea;
+  color: white;
+  box-shadow: 0 3px 10px rgba(102, 126, 234, 0.4);
+}

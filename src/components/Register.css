@@ -1,0 +1,169 @@
+/* 동일한 스타일 사용 */
+@import './Login.css';
+
+.input-with-button {
+  display: flex;
+  gap: 8px;
+}
+
+.input-with-button input {
+  flex: 1;
+}
+
+.btn-check {
+  padding: 12px 16px;
+  background: #0B1751;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s;
+  min-width: 100px;
+}
+
+.btn-check:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-check:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.check-message {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.check-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.check-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.check-message.info {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* 다크 모드 */
+[data-theme="dark"] .auth-container {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+[data-theme="dark"] .auth-box {
+  background: #0f3460;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .auth-box h2 {
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .form-group label {
+  color: #b8b8b8;
+}
+
+[data-theme="dark"] .form-group input {
+  background: #1a1a2e;
+  border-color: #2a2a3e;
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .form-group input:focus {
+  border-color: #667eea;
+}
+
+[data-theme="dark"] .form-group input:disabled {
+  background: #252539;
+  opacity: 0.7;
+}
+
+[data-theme="dark"] .checkbox-group span {
+  color: #b8b8b8;
+}
+
+[data-theme="dark"] .error-message {
+  background: #5a1a1a;
+  color: #ffb3b3;
+  border: 1px solid #7a2a2a;
+}
+
+[data-theme="dark"] .success-message {
+  background: #1a4d2e;
+  color: #b3ffb3;
+  border: 1px solid #2a6d3e;
+}
+
+[data-theme="dark"] .check-message.success {
+  background: #1a4d2e;
+  color: #b3ffb3;
+  border-color: #2a6d3e;
+}
+
+[data-theme="dark"] .check-message.error {
+  background: #5a1a1a;
+  color: #ffb3b3;
+  border-color: #7a2a2a;
+}
+
+[data-theme="dark"] .check-message.info {
+  background: #1a3a4d;
+  color: #b3d9ff;
+  border-color: #2a5a7d;
+}
+
+[data-theme="dark"] .link-button {
+  color: #88a0ff;
+}
+
+[data-theme="dark"] .link-button:hover {
+  color: #a0b8ff;
+}
+
+[data-theme="dark"] .divider-text span,
+[data-theme="dark"] .auth-links {
+  color: #888;
+}
+
+[data-theme="dark"] .btn-oauth {
+  background: #1a1a2e;
+  border-color: #2a2a3e;
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .btn-oauth:hover {
+  border-color: #667eea;
+  background: #252539;
+}
+
+[data-theme="dark"] .mode-tabs button {
+  background: #1a1a2e;
+  border-color: #2a2a3e;
+  color: #b8b8b8;
+}
+
+[data-theme="dark"] .mode-tabs button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+[data-theme="dark"] .mode-tabs button:hover:not(.active) {
+  border-color: #667eea;
+  color: #88a0ff;
+}
