@@ -362,27 +362,6 @@ All sensitive configuration should be in `.env` file (not committed to git):
 - Check `SESSION_SECRET` and `JWT_SECRET` are set
 - Verify CORS settings allow credentials
 
-## 🚀 Deployment
-
-### Frontend Deployment (Vercel/Netlify)
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder
-3. Set environment variables for API URL
-
-### Backend Deployment (Heroku/Railway/DigitalOcean)
-1. Set all environment variables
-2. Ensure MongoDB connection string is for production database
-3. Set `NODE_ENV=production`
-4. Configure allowed origins for CORS
-
-### Environment Variables for Production
-```env
-NODE_ENV=production
-MONGODB_URI=<production-mongodb-uri>
-CLIENT_URL=<production-frontend-url>
-SERVER_URL=<production-backend-url>
-```
-
 ## 📝 License
 
 This project is licensed under the MIT License.
